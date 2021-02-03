@@ -1,0 +1,74 @@
+[
+            {
+                "Name": "Chair",
+                "Price" : "1000",
+                "Description" : "Classical Wooden Chair",
+                "company"  : "ABC"
+
+            },
+            {
+                "Name": "Table",
+                "Price" : "1000",
+                "Description" : "Classical Wooden Table",
+                "company"  : "KLM"
+                
+            },
+            {
+                "Name": "Electric Toy Car",
+                "Price" : "1000",
+                "Description" : "Toy Car",
+                "company"  : "DEF"
+                
+            }
+        
+    
+    ,
+            {
+                "Name": "Mobile",
+                "Price" : "1000",
+                "Description" : "Mobile",
+                "company"  : "ABC"
+
+            },
+            {
+                "Name": "Earphone",
+                "Price" : "1000",
+                "Description" : "Arphone",
+                "company"  : "XYZ"
+                
+            },
+            {
+                "Name": "Headphone",
+                "Price" : "1000",
+                "Description" : "Headphone",
+                "company"  : "XYZ"
+                
+            }
+        
+    ,
+    
+      
+            {
+                "Name": "bluetooth",
+                "Price" : "1000",
+                "Description" : "Bluetooth",
+                "company"  : "DEF"
+
+            },
+            {
+                "Name": "Mouse",
+                "Price" : "1000",
+                "Description" : "Mouse",
+                "company"  : "ABC"
+                
+            },
+            {
+                
+                "Name": "Keyboard",
+                "Price" : "1000",
+                "Description" : "Keyboard",
+                "company"  : "DEF"
+            }
+        
+    
+]
