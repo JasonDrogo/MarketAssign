@@ -19,9 +19,9 @@ app.get("/products", function(req, res) {
     });
   });
 
-  app.use(express.static(path.join(__dirname, "/dist/market-assign")));
+  app.use(express.static(path.join(__dirname, "/dist/MarketAssign")));
   // Anything that doesn't match the above, send back index.html
   app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname + "/dist/market-assign/index.html"));
+    res.sendFile(path.join(__dirname + "/dist/MarketAssign/index.html"));
   });
 app.listen(port, () => console.log(`listening at ${port}`));
