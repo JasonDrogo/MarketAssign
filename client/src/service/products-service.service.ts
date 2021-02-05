@@ -9,6 +9,6 @@ export class ProductsServiceService {
   constructor(public _http : HttpClient) { }
 
   getProducts() : Observable<Array<any>>{
-   return this._http.get<any>('http://localhost:8080/products');
+   return this._http.get<any>('/products');
   }
 }
