@@ -1,27 +1,27 @@
 const express = require("express");
-const bodyParser = require("body-parser");
 const app = express();
 const cors = require("cors");
+const path = require("path");
 const port = process.env.PORT || 8080;
-const data = require('./company-products.json');
+const dataPath = './company-products.json';
+var fs = require("fs");
 
-
-
-
-app.use(function (req, res, next) {
-    //Enabling CORS
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, x-client-key, x-client-token, x-client-secret, Authorization");
-    next();
-});
-
-app.get('/products', (req, res) => {
-            res.json(data);
-})
-
-
-
-app.use(bodyParser.json());
 app.use(cors());
+
+
+app.get("/products", function(req, res) {
+    fs.readFile(dataPath, "utf8", (err, data) => {
+      if (err) {
+        throw err;
+      }
+  
+      res.send(JSON.parse(data));
+    });
+  });
+
+  app.use(express.static(path.join(__dirname, "client/build")));
+  // Anything that doesn't match the above, send back index.html
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname + "/client/build/index.html"));
+  });
 app.listen(port, () => console.log(`listening at ${port}`));
