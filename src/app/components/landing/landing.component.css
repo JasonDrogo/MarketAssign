@@ -1,0 +1,18 @@
+/* .flex-container > *{
+    display: ;
+} */
+/* div > *{
+2} */
+.card-conatiner{
+    /* border: 5px ridge lightskyblue; */
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+
+}
+
